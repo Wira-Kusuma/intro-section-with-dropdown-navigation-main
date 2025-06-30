@@ -42,23 +42,17 @@ nav a, .lg a {
     text-decoration: none;
     color: var(--Almost-Black);
     cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+nav a:hover, .lg a:hover {
+    color: var(--Medium-Gray);
 }
 
 .lg {
     display: flex;
     gap: 2rem;
     align-items: center;
-}
-
-.lg button {
-    all: unset;
-    padding: 0.5rem;
-    border: 1px solid;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    font-size: 0.9rem;
-    cursor: pointer;
 }
 
 main {
@@ -82,6 +76,29 @@ main {
     font-weight: 700;
 }
 
+.left p {
+    font-size: 1rem;
+    color: var(--Medium-Gray);
+}
+
+button {
+    all: unset;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.7rem;
+    border: 1px solid var(--Almost-Black);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    user-select: none;
+    transition: ease-in-out 0.2s;
+}
+
+button:hover {
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+}
+
 .right {
     width: 28%;
     height: 28%;
@@ -90,6 +107,17 @@ main {
 .right img {
     width: 100%;
     height: 100%;
+    user-select: none;
 }
 
+.sponsor {
+    display: flex;
+    gap: 50px;
+}
+
+.sponsor img {
+    width: fit-content;
+    height: fit-content;
+    user-select: none;
+}
 
