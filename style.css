@@ -35,7 +35,13 @@ nav img {
 
 nav {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
+}
+
+nav a img {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
 }
 
 nav a, .lg a {
@@ -54,6 +60,8 @@ nav a:hover, .lg a:hover {
     gap: 2rem;
     align-items: center;
 }
+
+.burger {display: none;}
 
 main {
     display: flex;
@@ -104,6 +112,8 @@ button:hover {
     height: 28%;
 }
 
+.mobile-img {display: none;}
+
 .right img {
     width: 100%;
     height: 100%;
@@ -121,3 +131,57 @@ button:hover {
     user-select: none;
 }
 
+@media screen and (max-width:700px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 100%;
+    }
+    nav a ,.lg{
+        display: none;
+    }
+
+    main {
+        width: 100%l;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .left {
+        margin: auto;
+        width: 80%;
+        text-align: center;
+        padding: 0;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .left h1 {
+        font-size: 2.5rem;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {display: flex;}
+
+    .right {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .sponsor {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .sponsor img {
+        width: 70px;
+    }
+}
