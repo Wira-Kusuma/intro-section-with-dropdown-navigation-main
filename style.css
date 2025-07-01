@@ -28,6 +28,12 @@ header {
     user-select: none;
 }
 
+.headLeft {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
 nav img {
     margin-right: 2rem;
     user-select: none;
@@ -43,6 +49,8 @@ nav a img {
     margin: 0;
     padding: 0;
 }
+
+#icon-close {display: none;}
 
 nav a, .lg a {
     text-decoration: none;
@@ -131,14 +139,115 @@ button:hover {
     user-select: none;
 }
 
+/* nav drop */
+
+.fearturesDrop {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    left: 150px;
+    top: 70px;
+    background-color: var(--Almost-White);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0.1px var(--Medium-Gray);
+    animation: shown ease-in-out 0.3s forwards;
+}
+
+.companyDrop {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    left: 290px;
+    top: 70px;
+    background-color: var(--Almost-White);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0.1px var(--Medium-Gray);
+    animation: shown ease-in-out 0.3s forwards;
+}
+
+.fearturesDrop a img {
+    margin-right: 1rem;
+}
+
+.show {display: flex;}
+.hide {display: none;}
+
+@keyframes shown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media screen and (max-width:700px) {
     body {
         overflow-x: hidden;
         overflow-y: scroll;
         width: 100%;
     }
-    nav a ,.lg{
+
+    .lg {
         display: none;
+        z-index: 1;
+        position: absolute;
+        flex-direction: column;
+        top: 500px;
+        right: 50px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .headLeft {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #icon-close {
+        display: flex;
+        width: 30px; 
+        align-self: flex-end;
+    }
+
+    nav{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        top: 0;
+        right: 0;
+        background-color: white;
+        padding: 1rem;
+        box-shadow: 0 20px 50px 0.5px black;
+    }
+
+    .fearturesDrop,.companyDrop {
+        all: unset;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: 1rem;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .burger img {
+        width: 30px;
+        height: 20px;
     }
 
     main {
