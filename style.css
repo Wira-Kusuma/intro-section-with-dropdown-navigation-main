@@ -254,7 +254,7 @@ button:hover {
     }
 
     main {
-        width: 100%l;
+        width: 100%;
         display: flex;
         flex-direction: column-reverse;
     }

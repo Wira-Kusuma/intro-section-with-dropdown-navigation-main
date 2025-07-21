@@ -1,8 +1,8 @@
-let feartures = document.getElementById("feartures");
-let company = document.getElementById("company");
+const feartures = document.getElementById("feartures");
+const company = document.getElementById("company");
 
-let fearturesDrop = document.querySelector(".fearturesDrop");
-let companyDrop = document.querySelector(".companyDrop");
+const fearturesDrop = document.querySelector(".fearturesDrop");
+const companyDrop = document.querySelector(".companyDrop");
 
 feartures.addEventListener("click", function() {
     fearturesDrop.classList.toggle("show");
