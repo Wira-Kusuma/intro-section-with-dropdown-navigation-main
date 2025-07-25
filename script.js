@@ -15,10 +15,10 @@ company.addEventListener("click", function() {
 // device
 
 document.querySelector(".burger").addEventListener("click", function() {
-    document.querySelector("nav").classList.add("show");
-    document.querySelector(".lg").classList.add("show");
+    document.querySelector("nav").classList.add("showd");
+    document.querySelector(".lg").classList.add("showd");
 });
 document.getElementById("icon-close").addEventListener("click", function() {
-    document.querySelector("nav").classList.remove("show");
-    document.querySelector(".lg").classList.remove("show");
+    document.querySelector("nav").classList.remove("showd");
+    document.querySelector(".lg").classList.remove("showd");
 });
