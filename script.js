@@ -16,9 +16,9 @@ company.addEventListener("click", function() {
 
 document.querySelector(".burger").addEventListener("click", function() {
     document.querySelector("nav").classList.add("showd");
-    document.querySelector(".lg").classList.add("showd");
+    document.querySelector(".lg").classList.add("show");
 });
 document.getElementById("icon-close").addEventListener("click", function() {
     document.querySelector("nav").classList.remove("showd");
-    document.querySelector(".lg").classList.remove("showd");
+    document.querySelector(".lg").classList.remove("show");
 });
