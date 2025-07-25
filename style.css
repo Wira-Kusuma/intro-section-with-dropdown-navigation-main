@@ -182,7 +182,7 @@ button:hover {
 }
 
 .show {
-    opacity: 1;
+    opacity: 1 !important;
     pointer-events: all;
 }
 .hide {display: none;}
@@ -196,14 +196,13 @@ button:hover {
 
     .lg {
         display: flex;
-        z-index: 1;
         position: absolute;
         flex-direction: column;
-        top: 500px;
+        top: 550px;
         right: 50px;
         transition:ease-in-out 0.3s;
-        opacity:0;
-        pointer-events:none;
+        opacity: 0;
+        pointer-events: none;
     }
 
     header {
@@ -227,16 +226,20 @@ button:hover {
         display: flex;
         flex-direction: column;
         position: absolute;
-        height: 100%;
+        height: 140vh;
         width: 50%;
         top: 0;
         right: 0;
         background-color: white;
         padding: 1rem;
-        box-shadow: 0 0 1000px 0px black;
-        transition:ease-in-out 0.3s;
-        opacity:0;
-        pointer-events:none;
+        box-shadow: 0 0 100em 0px black;
+        transition: ease-in-out 0.3s;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    nav a {
+        align-self: unset;
     }
 
     .fearturesDrop,.companyDrop {
